@@ -1,0 +1,101 @@
+.header {
+  background-image: url("../../assets/imgs/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.PotMain nav {
+  background-image: linear-gradient(
+    83.2deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.PotMain ul {
+  width: 100%;
+  display: flex;
+  min-height: 30px;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 540px;
+  margin: 0px auto;
+}
+.PotMain ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: none;
+}
+.userInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  align-items: flex-start;
+}
+.userInfo h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.userInfo h1 {
+  font-size: 45px;
+  font-weight: 900;
+}
+.userInfo p {
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.userInfo button {
+  background-color: royalblue;
+  color: #fff;
+  padding: 9px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+#About h1 {
+  color: royalblue;
+  font-size: 35px;
+  font-weight: 700;
+}
+#About p {
+  color: #777;
+  font-size: 20px;
+}
+.Projects img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.skills {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.skills input {
+  width: 100%;
+}
+
+.contact-form input {
+  background-color: #f3f3f3;
+  border: 1px solid #888;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+.contact-form input:focus {
+  outline: none;
+}
+.contact-form textarea {
+  width: 620px;
+  border: 1px solid #888;
+}

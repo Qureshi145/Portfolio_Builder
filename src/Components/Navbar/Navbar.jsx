@@ -4,6 +4,8 @@ import { FaUser } from "react-icons/fa6";
 import { LuMenu } from "react-icons/lu";
 import { LiaTimesSolid } from "react-icons/lia";
 import "./Nav.css";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const menuChange = (e) => {
   const navBar = document.querySelector(".navbarList");
   const menuIcon = document.querySelector(".menuIcon");
@@ -22,22 +24,46 @@ const timesChange = (e) => {
 };
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <div className="Navbar flex items-center justify-between px-3 py-2 overflow-hidden">
+      <div className="Navbar flex items-center justify-between px-3 py-2 overflow-hidden z-50">
         <div className="Logo self-start">
-          <img src={logo} alt="Nothing" width={100} />
+          <img
+            src={logo}
+            alt="Nothing"
+            width={100}
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </div>
-        <nav className="">
+        <nav className="z-50">
           <ul className="navbarList">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Template</li>
-            <li>Blog</li>
+            <Link to="/">
+              <li className="cursor-pointer">Home</li>
+            </Link>
+            <Link to="about">
+              <li className="cursor-pointer">About Us</li>
+            </Link>
+            <Link to="template">
+              <li className="cursor-pointer">Template</li>
+            </Link>
+            <Link to="blog">
+              <li className="cursor-pointer">Blog</li>
+            </Link>
           </ul>
         </nav>
         <div className="icon flex items-center gap-5 self-start">
-          <FaUser className="bg-[#00DFC2] text-white p-2 rounded-full text-[40px] max-Xs:text-[30px] " />
+          {/* <FaUser className="bg-[#00DFC2] text-white p-2 rounded-full text-[40px] max-Xs:text-[30px] " /> */}
+          <Link to="login">
+            <li className="cursor-pointer text-[#00dfc2] font-bold">Login</li>
+          </Link>
+          <Link to="signup">
+            <li className="cursor-pointer bg-[#00dfc2] p-1.5 rounded-xl">
+              Sign UP
+            </li>
+          </Link>
           <LuMenu
             className="menuIcon text-3xl "
             onClick={(e) => menuChange(e)}
