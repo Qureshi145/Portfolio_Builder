@@ -12,35 +12,47 @@ const Portfolio1 = () => {
         <nav className="navBar">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#home" className="max-xsm:text-[13px] text-[20px]">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#About" className="max-xsm:text-[13px] text-[20px]">
+                About
+              </a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#contact" className="max-xsm:text-[13px] text-[20px]">
+                Contact Us
+              </a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#skill" className="max-xsm:text-[13px] text-[20px]">
+                Skills
+              </a>
             </li>
           </ul>
         </nav>
-        <div className="userInfo">
-          <h2>Hi!</h2>
-          <h1>
-            I am <span>John Deo</span>
+        <div className="userInfo" id="home">
+          <h1 className="text-[44px] max-xms:text-[20px]">
+            Hi <br />I am <span>John Deo</span>
           </h1>
-          <p>Frontend Web Developer</p>
-          <button>Visit My Work</button>
+          <p className=" text-[20px] max-xsm:text-[17px]">
+            Frontend Web Developer
+          </p>
+          <button className="text-[12px]">Visit My Work</button>
         </div>
       </div>
-      <div id="About" className="flex p-5 justify-center flex-wrap">
+      <div
+        id="About"
+        className="flex p-5 justify-center max-md:flex-col max-md:justify-center max-md:items-center"
+      >
         <div className=" max-w-[40%]">
           <img src={man} alt="Man" className="w-full" />
         </div>
-        <div className="max-w-[60%] p-8">
-          <h1>About Me</h1>
-          <p>
+        <div className="max-w-[60%] p-8 max-md:p-3 max-md:max-w-full ">
+          <h1 className=" max-md:text-center">About Me</h1>
+          <p className="max-md:text-justify">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Repudiandae aliquid ad provident aut fuga animi soluta quae eos non
             cupiditate voluptates dolorem, doloremque quos dicta quibusdam
@@ -58,7 +70,7 @@ const Portfolio1 = () => {
           <h1 className="text-center font-bold text-[40px] my-5 text-[royalblue]">
             My Projects
           </h1>
-          <div className="flex gap-4">
+          <div className="flex gap-4 max-md:flex-col p-3 justify-center items-center">
             <a href="#">
               <img src={folio} alt="img1" />
             </a>
@@ -74,15 +86,15 @@ const Portfolio1 = () => {
           </div>
         </div>
       </div>
-      <div className="skills p-5">
+      <div className="skills p-5" id="skill">
         <h1 className="text-center font-bold text-[40px] my-5 text-[royalblue]">
           Skills
         </h1>
-        <div className="flex gap-16">
-          <div className="max-w-[40%]">
+        <div className="flex gap-16 max-lg:flex-col justify-center items-center">
+          <div className="max-w-[40%] max-lg:max-w-[50%]">
             <img src={img} alt="img" className="w-full shadow-2xl rounded-lg" />
           </div>
-          <div className="self-start w-full">
+          <div className="self-start w-full max-lg:max-w-[90%]">
             <div className="skill1">
               {" "}
               <h1>Web developer</h1>
@@ -111,29 +123,39 @@ const Portfolio1 = () => {
           </div>
         </div>
       </div>
-      <section id="contact" className="my-4">
-        <div className=" text-center">
+      <section id="contact" className="my-4 ">
+        <div>
           <p className="text-center text-[#888] text-[20px]">
             How can you communicate?
           </p>
-          <h6 className="text-[royalblue] text-center font-bold my-2 text-[40px] ">
+          <h6 className="text-[royalblue] text-center font-bold my-2 text-[40px] max-xsm:text-[25px]">
             Contact Me
           </h6>
-          <form action="" className="contact-form mt-3">
-            <div className="flex flex-col gap-4 justify-center items-center">
-              <div className="flex gap-4">
+          <form action="" className="contact-form w-full mt-3 p-4">
+            <div className="flex flex-col gap-4 justify-center items-center ">
+              <div className="flex gap-4 max-xms:flex-col justify-center w-full">
                 <div className="">
-                  <input type="text" placeholder="Your Name" required />
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                    className="max-xms:w-[100%]"
+                  />
                 </div>
                 <div className="">
-                  <input type="email" placeholder="Enter Email" requried />
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    requried
+                    className="max-xms:w-[100%]"
+                  />
                 </div>
               </div>
-              <div className="">
+              <div className="w-full">
                 <textarea
                   name="comment"
                   placeholder="Write Something"
-                  cols={54}
+                  className="w-full mx-auto p-1 focus:outline-none"
                   rows={10}
                 ></textarea>
               </div>
@@ -148,7 +170,7 @@ const Portfolio1 = () => {
           </form>
         </div>
       </section>
-      <footer className=" mt-6 bg-black flex justify-center items-center min-h-[65px] text-white text-center text-[23px] py-10px 0px">
+      <footer className=" mt-6 bg-black flex justify-center items-center min-h-[65px] text-white text-center text-[23px] py-[10px] 0px max-md:text-[15px] max-xssm:text-[10px]">
         &copy; Copyright abcWebdeveloper.com All right Reserved 2024-2030{" "}
       </footer>
     </div>

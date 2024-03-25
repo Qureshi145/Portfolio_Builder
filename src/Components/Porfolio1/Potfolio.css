@@ -28,7 +28,6 @@
 }
 .PotMain ul li a {
   color: #fff;
-  font-size: 20px;
   font-weight: 400;
   letter-spacing: 2px;
   text-shadow: none;
@@ -43,17 +42,12 @@
   line-height: 1.1;
   align-items: flex-start;
 }
-.userInfo h2 {
-  font-size: 40px;
-  font-weight: 800;
-}
+
 .userInfo h1 {
-  font-size: 45px;
   font-weight: 900;
 }
 .userInfo p {
   letter-spacing: 1px;
-  font-size: 20px;
   margin: 10px 0px;
 }
 .userInfo button {
@@ -62,7 +56,6 @@
   padding: 9px 10px;
   border-radius: 10px;
   letter-spacing: 2px;
-  font-size: 18px;
 }
 #About h1 {
   color: royalblue;
@@ -90,12 +83,10 @@
   border: 1px solid #888;
   padding: 5px 10px;
   border-radius: 5px;
-  width: 300px;
 }
 .contact-form input:focus {
   outline: none;
 }
 .contact-form textarea {
-  width: 620px;
   border: 1px solid #888;
 }

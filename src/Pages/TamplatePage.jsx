@@ -13,8 +13,8 @@ const TamplatePage = () => {
     navigate("/portfolio1");
   };
   return (
-    <div className="p-10 max-md:p-8 w-fit max-md:w-full rounded-xl mx-auto relative overflow-hidden">
-      <div className="flex flex-col gap-10 max-h-[500px] main-div ">
+    <div className="p-10 max-md:p-8   rounded-xl mx-auto relative overflow-hidden parent">
+      <div className="flex flex-col max-w-fit mx-auto gap-10 max-h-[500px] main-div ">
         <div className="flex justify-center max-md:flex-col max-md:items-center  gap-16  mt-3 z-40">
           <div className="max-h-[300px] max-md:h-[300px] max-w-[256px] max-md:w-[100%]">
             <img
