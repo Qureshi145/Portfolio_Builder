@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.p2ulli {
+  background-color: black;
+}
+
+ul li a.green-a {
+  color: green;
+  background-color: black;
+}
+
+.inputgreen {
+  display: flex;
+  justify-content: center;
+}
+
+.hr {
+  height: 3px;
+  background-color: black;
+  margin: 10px 5%; 
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column; 
+}
+
+.image-container {
+  max-width: 80%; 
+}
+
+.man2-image {
+  width: 100%;
+}
+
+.about-content {
+  max-width: 80%; 
+  padding: 0 20px;
+  text-align: center; 
+}
+
+.projects-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  color: green;
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.project-item img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.skills-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.skill {
+  max-width: 200px;
+}
+
+.contact-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%; 
+  max-width: 700px; 
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.footer {
+  background-color: black;
+  color: green;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .hr {
+    margin: 10px 10%;
+  }
+  
+  .about-section {
+    flex-direction: row;
+  }
+}
