@@ -12,6 +12,10 @@ const TamplatePage = () => {
     console.log("click");
     navigate("/portfolio1");
   };
+  const handlePortfolio2 = () => {
+    console.log("click");
+    navigate("/portfolio2");
+  };
   return (
     <div className="p-10 max-md:p-8   rounded-xl mx-auto relative overflow-hidden parent">
       <div className="flex flex-col max-w-fit mx-auto gap-10 max-h-[500px] main-div ">
@@ -28,7 +32,10 @@ const TamplatePage = () => {
           </div>
 
           <div className="max-h-[300px] max-md:h-[300px] max-w-[256px] max-md:w-[100%]">
-            <img src={m2} alt="model2" className="w-full h-full object-cover" />
+            <img src={m2} alt="model2" className="w-full h-full object-cover"
+             onClick={() => {
+                handlePortfolio2();
+              }}/>
           </div>
         </div>
         <div className="flex justify-center max-md:flex-col max-md:items-center  gap-16  mt-3 z-50">
